@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:padding="16sp"
+    android:scrollbarSize="25sp"
+    android:background="@drawable/background"
+    android:fillViewport="true"
+    tools:context=".Admin.AdminCategoryActivity">
+
+    <TextView
+        android:id="@+id/input_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="Add New Product"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linear_category1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_category"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/vegetable"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:src="@drawable/vegetable" />
+
+        <ImageView
+            android:id="@+id/fruit"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/fruit" />
+
+        <ImageView
+            android:id="@+id/flowering"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/flowering_plant" />
+
+        <ImageView
+            android:id="@+id/non_flowering"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/non_flowering_plant" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_category_name1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_category1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Vegetable Seeds"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Fruit Seeds"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/name3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text=" Flowering Plants"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/name4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text=" Non Flowering Plants"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_category2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_category_name1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/small_pot"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:src="@drawable/small_pot" />
+
+        <ImageView
+            android:id="@+id/big_pot"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/big_pot" />
+
+        <ImageView
+            android:id="@+id/chemical"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/chemical" />
+
+        <ImageView
+            android:id="@+id/organic"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/organic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_category_name2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_category2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name5"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Small Pots"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/name6"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Big Pots"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/name7"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Chemical Fertilizers"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/name8"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Organic Fertilizers"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_category3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_category_name2"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/insect"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:src="@drawable/insecticide"
+            />
+
+        <ImageView
+            android:id="@+id/fungi"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/fungicide"
+            />
+        <ImageView
+            android:id="@+id/machinery"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/machinery"
+            />
+        <ImageView
+            android:id="@+id/soil"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/soil"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_category_name3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_category3"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/name9"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Insecticides"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/name10"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Fungicides"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/name11"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text=" Machinery"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/name12"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Soil"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/maintain_btn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/check_orders_btn"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Maintain Products"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/check_orders_btn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/admin_logout_btn"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Check New Orders"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/admin_logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/purple_500"
+        android:text="LogOut"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+</RelativeLayout>
